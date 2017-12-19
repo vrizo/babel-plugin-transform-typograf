@@ -70,7 +70,7 @@ than UTF-8 character, and it is visible in any editor.
 
 # Limitations
 
-- It is tested with `ru` :ru: and `en` :en: languages only for now;
+- It is tested with `ru` :ru: and `en` :us: languages only for now;
 
 # Tests
 - There are no any tests yet.
