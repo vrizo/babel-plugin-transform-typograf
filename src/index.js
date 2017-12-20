@@ -35,10 +35,10 @@ module.exports = function ({ types: t }) {
   return {
     name: 'transform-typograf',
     visitor: {
-      CallExpression (path) {
-        if (path.node.callee.name !== 'messages') return
-        if (!t.isObjectExpression(path.node.arguments[0])) return
-        const langs = path.node.arguments[0].properties
+      VariableDeclarator (path) {
+        if (path.node.id.name !== 'I18N') return
+        if (!t.isObjectExpression(path.node.init)) return
+        const langs = path.node.init.properties
 
         langs.forEach(function (lang) {
           if (!t.isObjectExpression(lang.value)) return
