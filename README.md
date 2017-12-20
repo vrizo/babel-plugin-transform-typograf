@@ -1,6 +1,6 @@
 <a href="https://amplifr.com/?utm_source=babel-plugin-transform-typograf">
-  <img width="100" height="100" align="right"
-    alt="Amplifr Logo" src="https://amplifr.com/logo.png" />
+  <img width="100" height="140" align="right"
+    alt="Amplifr Logo" src="https://amplifr-direct.s3-eu-west-1.amazonaws.com/social_images/image/37b580d9-3668-4005-8d5a-137de3a3e77c.png" />
 </a>
 
 # Babel Typograf Plugin
