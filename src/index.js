@@ -40,12 +40,12 @@ module.exports = function ({ types: t }) {
         if (!t.isObjectExpression(path.node.arguments[0])) return
         const langs = path.node.arguments[0].properties
 
-        langs.forEach(lang => {
+        langs.forEach(function (lang) {
           if (!t.isObjectExpression(lang.value)) return
           const messages = lang.value.properties
           const typograf = init(lang.key.name)
 
-          messages.forEach(message => {
+          messages.forEach(function (message) {
             const string = concat(message.value)
             const result = nbsp(typograf.execute(string))
             if (result && string) message.value = t.stringLiteral(result)
