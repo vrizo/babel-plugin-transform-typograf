@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-typograf",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Automatically formats your translations in JS",
   "keywords": [
     "babel-plugin",
@@ -13,7 +13,6 @@
   "main": "src/index.js",
   "repository": "https://github.com/killbillsbor/babel-plugin-transform-typograf",
   "scripts": {
-    "example": "yarn build && babel example/input.js -o example/output.js",
     "test": "mocha --compilers js:babel-register",
     "test:watch": "yarn test -- --watch"
   },
