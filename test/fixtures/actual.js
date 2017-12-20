@@ -1,4 +1,4 @@
-const I18N = messages({
+const I18N = {
   ru: {
     single: "Слово",
     multiple: "Несколько слов в переводе",
@@ -33,4 +33,4 @@ const I18N = messages({
     more: "More symbol's...",
     nothing: "Nothing process here"
   }
-});
+};

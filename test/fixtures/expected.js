@@ -1,4 +1,4 @@
-const I18N = messages({
+const I18N = {
   ru: {
     single: "Слово",
     multiple: "Несколько слов в\xA0переводе",
@@ -10,7 +10,7 @@ const I18N = messages({
       many: `${n} функция`
     }),
     large: "Большой текст, состоящий из\xA0большого количества текста. Здесь\xA0несколько строк текста, проверяем!",
-    more: "Больше спецсимволов\u2019s\u2026",
+    more: "Больше спецсимволов's…",
     nothing: "Нечего делать здесь"
   },
   en: {
@@ -24,7 +24,7 @@ const I18N = messages({
       many: `${n} functions`
     }),
     large: "Large text, lots of\xA0words. The text includes several\xA0lines, just to\xA0check the plugin!",
-    more: "More symbol\u2019s\u2026",
+    more: "More symbol’s…",
     nothing: "Nothing process here"
   }
-});
+};
