@@ -6,12 +6,13 @@
 # Babel Typograf Plugin
 
 The plugin automatically formats your translations in JS. It uses 
-our structure so it can't be easily implemented in your project.
+our structure so, unfortunately, it can't be easily implemented in 
+your project.
 
 # Structure (our approach)
 
 ```js
-const I18N = messages({
+const I18N = {
   ru: {
     heading: 'Структура должна быть ',
     content: 'вот такая. Допускается ' +
@@ -22,7 +23,7 @@ const I18N = messages({
     content: 'like this. It`s allowed ' +
              'to use multiline~translations'
   }
-})
+}
 ```
 
 ## Example usage
@@ -36,8 +37,8 @@ h('div', [
 ])
 ```
 
-- Translation should be plain otherwise it won`t be processed;
-- Functions won`t be processed too.
+- Translation should be plain otherwise it won’t be processed;
+- Functions won’t be processed too.
 
 This is mine very first Babel Plugin so please send an Issue 
 if you have any suggestions to improve this.
@@ -65,7 +66,7 @@ for example, `.babelrc`:
 
 - It uses [Typograf](https://github.com/typograf/typograf) to format 
 the text;
-- Also, it replaces `~` with non-breaking space. It`s easier to use 
+- Also, it replaces `~` with non-breaking space. It’s easier to use 
 than UTF-8 character, and it is visible in any editor.
 
 # Limitations
@@ -82,8 +83,9 @@ $ yarn test
 ```
 
 It compares `actual.js` after transformation with an `expected.js`. 
-Unfortunately, it doesn`t work with Russian currently due to unexpected
-behaviour of Babel (it forces escaping of Cyrillic symbols).
+Please note that due to unexpected behavior of Babel (it forces 
+escaping of Cyrillic symbols), I have to add unescaping function
+to the text file.
 
 ---
 
