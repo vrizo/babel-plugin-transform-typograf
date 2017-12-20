@@ -12,7 +12,18 @@
   "author": "Vitalii Rizo",
   "main": "src/index.js",
   "repository": "https://github.com/killbillsbor/babel-plugin-transform-typograf",
+  "scripts": {
+    "example": "yarn build && babel example/input.js -o example/output.js",
+    "test": "mocha --compilers js:babel-register",
+    "test:watch": "yarn test -- --watch"
+  },
   "dependencies": {
     "typograf": "^6.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babylon": "^6.18.0",
+    "mocha": "^4.0.1"
   }
 }

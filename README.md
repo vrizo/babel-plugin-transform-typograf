@@ -71,10 +71,19 @@ than UTF-8 character, and it is visible in any editor.
 # Limitations
 
 - It is tested with `ru` :ru: and `en` :us: languages only for now;
+- Rules enabled: nbsp, hellip (ellipsis), apostrophe.
 
 # Tests
-- There are no any tests yet.
 
+Run the following command to run test:
+
+```bash
+$ yarn test
+```
+
+It compares `actual.js` after transformation with an `expected.js`. 
+Unfortunately, it doesn`t work with Russian currently due to unexpected
+behaviour of Babel (it forces escaping of Cyrillic symbols).
 
 ---
 
