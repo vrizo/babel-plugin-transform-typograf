@@ -1,3 +1,4 @@
+/* eslint-disable */
 const I18N = messages({
   ru: {
     single: "Перевод внутри~" + 

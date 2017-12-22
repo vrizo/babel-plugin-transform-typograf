@@ -1,3 +1,4 @@
+/* eslint-disable */
 const I18N = messages({
   ru: {
     single: "Перевод внутри\xA0функции. Объект с\xA0переводами обёрнут в\xA0функцию…"

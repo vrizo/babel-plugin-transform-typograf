@@ -1,3 +1,4 @@
+/* eslint-disable */
 const I18N = {
   ru: {
     single: "Слово",

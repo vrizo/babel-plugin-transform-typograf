@@ -37,14 +37,14 @@ module.exports = function ({ types: t }) {
     visitor: {
       VariableDeclarator (path) {
         if (path.node.id.name !== 'I18N') return
-        let lang = path.node.init
+        let translation = path.node.init
 
         if (path.node.init.arguments) {
-          lang = path.node.init.arguments[0]
+          translation = path.node.init.arguments[0]
         }
 
-        if (!t.isObjectExpression(lang)) return
-        const langs = lang.properties
+        if (!t.isObjectExpression(translation)) return
+        const langs = translation.properties
 
         langs.forEach(function (lang) {
           if (!t.isObjectExpression(lang.value)) return

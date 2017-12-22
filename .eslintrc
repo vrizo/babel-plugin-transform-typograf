@@ -1,0 +1,25 @@
+{
+  "extends": "eslint-config-logux/node4",
+  "rules": {
+    "no-console": "error",
+    "security/detect-possible-timing-attacks": "off",
+    "security/detect-non-literal-regexp": "off",
+    "security/detect-unsafe-regex": "off",
+    "node/no-unsupported-features": "off",
+    "prefer-arrow-callback": "off",
+    "multiline-ternary": [
+      "error",
+      "always-multiline"
+    ],
+    "global-require": "off",
+    "func-style": "off",
+    "strict": "off"
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  }
+}
