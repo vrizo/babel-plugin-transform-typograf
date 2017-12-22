@@ -26,6 +26,13 @@ const I18N = {
 }
 ```
 
+ :triangular_flag_on_post: Also, you can wrap the translation object with any function if translation
+is a first argument of this function:
+
+```js
+const I18N = messages({...})
+```
+
 ## Example usage
 
 ```js
