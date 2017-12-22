@@ -10,7 +10,6 @@
   "homepage": "https://github.com/killbillsbor/babel-plugin-transform-typograf",
   "license": "MIT",
   "author": "Vitalii Rizo <kb@kernel-it.ru>",
-  "main": "src/index.js",
   "repository": "babel-plugin-transform-typograf",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
