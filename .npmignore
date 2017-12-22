@@ -1,4 +1,6 @@
 src
-__tests__
+test/
+yarn.lock
+.gitignore
+.npmignore
 node_modules
-*.log
