@@ -5,9 +5,15 @@
 
 # Babel Typograf Plugin
 
-The plugin automatically formats your translations in JS. It uses 
-our structure so, unfortunately, it can't be easily implemented in 
-your project.
+The plugin automatically formats your translations in JS.
+
+# Features
+
+- It uses [Typograf](https://github.com/typograf/typograf) to format 
+the text;
+- Also, it replaces `~` with non-breaking space. It’s easier to use 
+than UTF-8 character, and it is visible in any editor.
+
 
 # Structure (our approach)
 
@@ -26,7 +32,7 @@ const I18N = {
 }
 ```
 
- :triangular_flag_on_post: Also, you can wrap the translation object with any function if translation
+:triangular_flag_on_post: Also, you can wrap the translation object with any function if translation
 is a first argument of this function:
 
 ```js
@@ -48,7 +54,7 @@ h('div', [
 - Functions won’t be processed too.
 
 This is mine very first Babel Plugin so please send an Issue 
-if you have any suggestions to improve this.
+if you have any suggestions how to improve this.
 
 # Plugin installation
 
@@ -69,13 +75,6 @@ for example, `.babelrc`:
   ]
 ```
 
-# Features
-
-- It uses [Typograf](https://github.com/typograf/typograf) to format 
-the text;
-- Also, it replaces `~` with non-breaking space. It’s easier to use 
-than UTF-8 character, and it is visible in any editor.
-
 # Limitations
 
 - It is tested with `ru` :ru: and `en` :us: languages only for now;
@@ -92,7 +91,7 @@ $ yarn test
 It compares `actual.js` after transformation with an `expected.js`. 
 Please note that due to unexpected behavior of Babel (it forces 
 escaping of Cyrillic symbols), I have to add unescaping function
-to the text file.
+to the test file.
 
 ---
 
