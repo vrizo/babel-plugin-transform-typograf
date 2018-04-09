@@ -12,7 +12,7 @@
   "author": "Vitalii Rizo <kb@kernel-it.ru>",
   "repository": "babel-plugin-transform-typograf",
   "scripts": {
-    "test": "mocha --compilers js:babel-register",
+    "test": "mocha --require babel-core/register",
     "test:watch": "yarn test -- --watch"
   },
   "dependencies": {
