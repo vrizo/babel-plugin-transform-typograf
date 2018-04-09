@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.3.0
+* Add support of Arrays as translations
+* Replace deprecated `--compilers` with a `--require`
+
 ## 0.2.2
 * Update dependencies (ESLint 6, Mocha 5)
 

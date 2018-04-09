@@ -32,6 +32,22 @@ module.exports = function ({ types: t }) {
     return false
   }
 
+  function process (node, lang) {
+    let output = node
+    if (t.isArrayExpression(node)) {
+      node.elements.forEach(function (item, index) {
+        node.elements[index] = process(item, lang)
+      })
+      output = node
+    } else {
+      const typograf = init(lang)
+      const string = concat(node)
+      const result = nbsp(typograf.execute(string))
+      if (string && result) output = t.stringLiteral(result)
+    }
+    return output
+  }
+
   return {
     name: 'transform-typograf',
     visitor: {
@@ -49,12 +65,9 @@ module.exports = function ({ types: t }) {
         langs.forEach(function (lang) {
           if (!t.isObjectExpression(lang.value)) return
           const messages = lang.value.properties
-          const typograf = init(lang.key.name)
 
           messages.forEach(function (message) {
-            const string = concat(message.value)
-            const result = nbsp(typograf.execute(string))
-            if (result && string) message.value = t.stringLiteral(result)
+            message.value = process(message.value, lang.key.name)
           })
         })
       }

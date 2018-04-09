@@ -22,12 +22,26 @@ const I18N = {
   ru: {
     heading: 'Структура должна быть ',
     content: 'вот такая. Допускается ' +
-             'использовать~переносы'
+             'использовать~переносы',
+    array: [
+      'Допускается использовать массивы',
+      [
+        'И массивы внутри массивов',
+        'Удобно для списков'
+      ]
+    ]
   },
   en: {
     heading: 'Structure should be ',
     content: 'like this. It`s allowed ' +
-             'to use multiline~translations'
+             'to use multiline~translations',
+    array: [
+      'You can use arrays',
+      [
+        'And arrays inside of arrays',
+        'It is used as lists in the main'
+      ]
+    ]
   }
 }
 ```
@@ -51,7 +65,8 @@ h('div', [
 ```
 
 - Translation should be plain otherwise it won’t be processed;
-- Functions won’t be processed too.
+- But Arrays are supported (used as lists in the main);
+- Anyway Functions won’t be processed.
 
 This is mine very first Babel Plugin so please send an Issue 
 if you have any suggestions how to improve this.

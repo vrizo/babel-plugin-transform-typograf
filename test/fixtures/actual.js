@@ -15,7 +15,15 @@ const I18N = {
            "большого количества текста. Здесь~" + 
            "несколько строк текста, проверяем!",
     more: "Больше спецсимволов's...",
-    nothing: "Нечего делать здесь"
+    nothing: "Нечего делать здесь",
+    array: [
+        'Вы не можете выбрать тариф потому что:',
+        [
+          'В тариф включён 1 проект, а у вас их 3.',
+          'В тариф включено 1 рабочее место, а у вас 2.'
+        ],
+        'Вы может выбрать~тарифы начиная с **Medium**.'
+      ]
   },
   en: {
     single: "Word",
@@ -32,6 +40,14 @@ const I18N = {
            "words. The text includes several~" + 
            "lines, just to check the plugin!",
     more: "More symbol's...",
-    nothing: "Nothing process here"
+    nothing: "Nothing process here",
+    array: [
+      'You can’t change the plan because:',
+      [
+        'Plan allows only 1 project, you have 3.',
+        'Plan allows only 1 working space, you have 2.'
+      ],
+      'You can choose any other plan starting from **Medium**.'
+    ]
   }
 };

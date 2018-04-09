@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-typograf",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Automatically formats your translations in JS",
   "keywords": [
     "babel-plugin",
