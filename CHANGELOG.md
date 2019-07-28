@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.3.2
+* Updated dependencies to resolve security vulnerabilities
+
 ## 0.3.0
 * Add support of Arrays as translations
 * Replace deprecated `--compilers` with a `--require`

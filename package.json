@@ -1,13 +1,13 @@
 {
   "name": "babel-plugin-transform-typograf",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Automatically formats your translations in JS",
   "keywords": [
     "babel-plugin",
     "typograph",
     "typograf"
   ],
-  "homepage": "https://github.com/killbillsbor/babel-plugin-transform-typograf",
+  "homepage": "https://github.com/vrizo/babel-plugin-transform-typograf",
   "license": "MIT",
   "author": "Vitalii Rizo <kb@kernel-it.ru>",
   "repository": "babel-plugin-transform-typograf",
@@ -16,21 +16,21 @@
     "test:watch": "yarn test -- --watch"
   },
   "dependencies": {
-    "eslint-plugin-node": "^6.0.1",
-    "typograf": "^6.7.0"
+    "eslint-plugin-node": "^9.1.0",
+    "typograf": "^6.8.2"
   },
   "devDependencies": {
+    "@logux/eslint-config": "^29.1.1",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babylon": "^6.18.0",
-    "eslint": "^4.19.1",
-    "eslint-config-logux": "^21.0.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-jest": "^21.15.0",
-    "eslint-plugin-promise": "^3.7.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.14.0",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^5.0.5"
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.2.0"
   }
 }

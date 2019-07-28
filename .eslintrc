@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-logux/node4",
+  "extends": "@logux/eslint-config/node",
   "rules": {
     "no-console": "error",
     "security/detect-possible-timing-attacks": "off",
